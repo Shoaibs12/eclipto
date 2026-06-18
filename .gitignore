@@ -1,0 +1,15 @@
+# Local environment and secrets
+.env
+.env.local
+.vercel
+
+# Operating system and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Source/reference material not required by the deployed website
+Eclipto_Pricing_Packages_2026-27.docx
+Eclipto_Service_Catalogue_2026-27.docx
+Screen Recording 2026-06-18 131917.mp4
+WhatsApp Image 2026-06-17 at 2.25.07 PM.jpeg
