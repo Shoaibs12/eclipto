@@ -16,10 +16,11 @@
 
   <header class="site-header">
     <a class="brand" href="#top" aria-label="Eclipto home">
-      <img class="brand-wordmark" src="assets/eclipto-wordmark.png" alt="Eclipto">
+      <img class="brand-wordmark" src="assets/eclipto-wordmark-light.png" alt="Eclipto">
     </a>
     <nav class="desktop-nav" aria-label="Main navigation">
       <a href="#services">Capabilities</a>
+      <a href="#projects">Projects</a>
       <a href="#work">Approach</a>
       <a href="#packages">Packages</a>
     </nav>
@@ -59,7 +60,7 @@
           </a>
         </div>
       </div>
-      <div class="hero-index mono">01 / 07</div>
+      <div class="hero-index mono">01 / 08</div>
       <div class="hero-location mono">INDIA — 20.5937° N</div>
     </section>
 
@@ -141,8 +142,22 @@
       </div>
     </section>
 
+    <section class="projects section-pad" id="projects">
+      <div class="projects-intro">
+        <div class="section-label reveal"><span>03</span> OUR PROJECTS</div>
+        <div class="projects-head">
+          <h2 class="reveal">Building digital experiences that<br>move <em>businesses forward.</em></h2>
+          <p class="reveal">From business platforms to real-estate experiences, we build modern digital products designed around real business needs.</p>
+        </div>
+      </div>
+
+      <div class="projects-grid" id="projects-grid" role="region" aria-label="Selected client projects">
+        <!-- Project cards rendered dynamically via script.js -->
+      </div>
+    </section>
+
     <section class="showcase section-pad" id="work">
-      <div class="section-label reveal"><span>03</span> ONE CONNECTED TEAM</div>
+      <div class="section-label reveal"><span>04</span> ONE CONNECTED TEAM</div>
       <div class="showcase-head">
         <h2 class="reveal">From first signal<br>to full-scale <em>impact.</em></h2>
         <p class="reveal">A connected workflow means the campaign understands the product, the content understands the audience, and the experience carries the same story into the real world.</p>
@@ -158,7 +173,7 @@
             <div class="chart" aria-label="Decorative growth chart">
               <div class="chart-grid"></div>
               <svg viewBox="0 0 800 260" role="img" aria-label="Upward growth curve">
-                <defs><linearGradient id="area" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#12b9ee" stop-opacity=".45"/><stop offset="1" stop-color="#12b9ee" stop-opacity="0"/></linearGradient></defs>
+                <defs><linearGradient id="area" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#388087" stop-opacity=".35"/><stop offset="1" stop-color="#388087" stop-opacity="0"/></linearGradient></defs>
                 <path class="chart-area" d="M0,230 C80,215 95,190 160,192 S260,165 320,172 S420,125 480,138 S570,92 630,108 S720,45 800,28 L800,260 L0,260Z"/>
                 <path class="chart-line" d="M0,230 C80,215 95,190 160,192 S260,165 320,172 S420,125 480,138 S570,92 630,108 S720,45 800,28"/>
               </svg>
@@ -181,7 +196,7 @@
     </section>
 
     <section class="process section-pad">
-      <div class="section-label reveal"><span>04</span> HOW MOMENTUM HAPPENS</div>
+      <div class="section-label reveal"><span>05</span> HOW MOMENTUM HAPPENS</div>
       <div class="process-layout">
         <div class="process-title">
           <h2 class="reveal">Clarity before<br><em>complexity.</em></h2>
@@ -197,7 +212,7 @@
     </section>
 
     <section class="packages section-pad" id="packages">
-      <div class="section-label reveal"><span>05</span> WAYS TO WORK TOGETHER</div>
+      <div class="section-label reveal"><span>06</span> WAYS TO WORK TOGETHER</div>
       <div class="packages-head">
         <h2 class="reveal">Choose your<br><em>growth mode.</em></h2>
         <p class="reveal">Transparent starting points. Every final proposal is shaped around your exact scope, timeline and ambition.</p>
@@ -224,7 +239,7 @@
       <div class="contact-info">
         <article class="contact-intro reveal">
           <div class="contact-title-row">
-            <img src="assets/eclipto-wordmark.png" alt="Eclipto">
+            <img src="assets/eclipto-wordmark-light.png" alt="Eclipto">
             <span>GET IN TOUCH</span>
           </div>
           <h2>Let's Build Something <em>Extraordinary</em></h2>
@@ -316,11 +331,23 @@
   </main>
 
   <footer>
-    <a class="footer-brand" href="#top"><img src="assets/eclipto-wordmark.png" alt="Eclipto"></a>
-    <div><small>CAPABILITIES</small><a href="#services">Technology</a><a href="#services">Marketing</a><a href="#services">Experiences</a></div>
+    <a class="footer-brand" href="#top"><img src="assets/eclipto-wordmark-white.png" alt="Eclipto"></a>
+    <div><small>SELECTED WORK</small><a href="#projects">Our Projects</a><a href="#services">Capabilities</a><a href="#work">Approach</a><a href="#packages">Packages</a></div>
     <div><small>CONNECT</small><a href="mailto:eclipto.in@gmail.com">Email</a><a href="tel:+917720835581">Call</a><a href="#top">Back to top ↑</a></div>
     <p>© 2026 ECLIPTO<br>TRANSFORMATIVE BRAND GROWTH CO.</p>
   </footer>
+
+  <div class="project-modal" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-project-title" aria-hidden="true">
+    <div class="modal-backdrop" id="modal-backdrop" tabindex="-1"></div>
+    <div class="modal-panel" role="document">
+      <button class="modal-close" id="modal-close" type="button" aria-label="Close project modal">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <div class="modal-content" id="modal-content">
+        <!-- Rendered dynamically by script.js -->
+      </div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
